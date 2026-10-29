@@ -108,13 +108,21 @@ uygulamadan olay alacak şekilde sınırlandırılmıştır. Her iki kısıtlama
 uygulamanın yapılandırmasında tanımlıdır ve genişletilemez.</p>
 <p><strong>Teknik dürüstlük notu:</strong> Android, ön plandaki uygulamanın
 adını okuyabilmek için servise "pencere içeriğini alma" yetkisi verilmesini
-zorunlu kılar. Uygulama bu yetkiyle yalnızca paket adını okur. Android 13 ve
-üzerinde, bu okuma sırasında ekran içeriğinin servise önbelleğe alınmasını
-engelleyen çağrı biçimi kullanılır ve her okumadan sonra önbellek temizlenir.
-<strong>Android 8 ile 12 arasında bunu engellemek mümkün değildir</strong>;
-o sürümlerde platform, ön plandaki uygulamanın alt düğümlerini servisin
-önbelleğine kendiliğinden çeker. Uygulama bu veriye bakmaz ve zaten hiçbir
-yere gönderemez, ancak farkı açıkça belirtiyoruz.</p>
+zorunlu kılar. Uygulama bu yetkiyle yalnızca paket adını okur. Android
+sürümüne göre üç ayrı durum var:</p>
+<ul>
+  <li><strong>Android 14 ve üzeri:</strong> okuma sırasında ekran içeriğinin
+      önbelleğe alınmasını engelleyen çağrı biçimi kullanılır <strong>ve</strong>
+      her okumadan sonra önbellek ayrıca temizlenir.</li>
+  <li><strong>Android 13:</strong> önbelleğe alma engellenir, ancak önbelleği
+      temizleyen çağrı bu sürümde bulunmadığı için temizleme adımı çalışmaz.</li>
+  <li><strong>Android 8 ile 12 arası:</strong> platform önbelleğe almayı
+      engellemeye izin vermez.</li>
+</ul>
+<p>Üç durumda da uygulama bu veriye bakmaz ve hiçbir yere gönderemez
+(internet izni yoktur); ancak "ekran içeriği servise hiç ulaşmaz" demek
+yalnızca Android 14 ve üzeri için tam doğrudur. Farkı bu yüzden açıkça
+belirtiyoruz.</p>
 <p><strong>Nasıl kapatılır:</strong> Uygulama içindeki ana anahtarı
 kapatmanız yeterlidir. Tamamen kaldırmak için: Android Ayarlar →
 Erişilebilirlik → Vira.</p>
@@ -236,12 +244,21 @@ configuration and cannot be widened.</p>
 <p><strong>Technical honesty note:</strong> Android requires the service to
 hold the "retrieve window content" capability in order to read the foreground
 app's name at all. The app uses that capability only to read the package name.
-On Android 13 and later, caching of screen content is switched off during that
-read and the cache is cleared afterwards. <strong>On Android 8 to 12 this
-cannot be disabled</strong>; on those versions the platform pulls the
-foreground app's child nodes into the service's cache by itself. The app never
-looks at that data and could not send it anywhere, but we state the difference
-explicitly.</p>
+There are three cases depending on the Android version:</p>
+<ul>
+  <li><strong>Android 14 and later:</strong> caching of screen content is
+      switched off during that read <strong>and</strong> the cache is
+      additionally cleared afterwards.</li>
+  <li><strong>Android 13:</strong> caching is switched off, but the call that
+      clears the cache does not exist on that version, so that step does not
+      run.</li>
+  <li><strong>Android 8 to 12:</strong> the platform does not allow that
+      caching to be disabled.</li>
+</ul>
+<p>In all three cases the app never looks at that data and cannot send it
+anywhere (it has no internet permission); but "screen content never reaches
+the service" is fully accurate only on Android 14 and later. That is why we
+state the difference explicitly.</p>
 <p><strong>How to turn it off:</strong> switch off the main toggle in the app.
 To remove it completely: Android Settings → Accessibility → Vira.</p>
 
