@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vira — Gizlilik Politikası / Privacy Policy</title>
+<meta name="description" content="Vira gizlilik politikası. Uygulamanın internet izni yoktur; kamera ve ses verisi cihazdan çıkmaz.">
+<style>
+  :root{
+    --metin:#1b1b21; --sessiz:#55525f; --arka:#ffffff; --kart:#f3f0f8;
+    --marka:#4b43bd; --cizgi:#e2dded;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--metin:#e7e2ee; --sessiz:#aaa4b6; --arka:#141319; --kart:#1f1e27;
+          --marka:#bdb6ff; --cizgi:#2c2a36;}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--arka);color:var(--metin);
+    font:16px/1.65 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0 20px}
+  main{max-width:760px;margin:0 auto;padding:56px 0 96px}
+  h1{font-size:2rem;line-height:1.2;margin:0 0 6px}
+  h2{font-size:1.35rem;margin:44px 0 10px;color:var(--marka)}
+  h3{font-size:1.05rem;margin:26px 0 6px}
+  p,li{color:var(--metin)}
+  .ust{color:var(--sessiz);font-size:.95rem;margin:0 0 28px}
+  .ozet{background:var(--kart);border-radius:16px;padding:20px 22px;margin:26px 0}
+  .ozet p{margin:0}
+  ul{padding-left:22px}
+  li{margin:7px 0}
+  a{color:var(--marka)}
+  hr{border:0;border-top:1px solid var(--cizgi);margin:64px 0}
+  .dil{display:inline-block;margin:0 0 28px;font-size:.95rem}
+  code{background:var(--kart);padding:2px 6px;border-radius:5px;font-size:.9em}
+  footer{color:var(--sessiz);font-size:.9rem;margin-top:48px}
+</style>
+</head>
+<body>
+<main>
+
+<p class="dil"><a href="#en">English version below ↓</a></p>
+
+<h1>Vira — Gizlilik Politikası</h1>
+<p class="ust">Son güncelleme: 29 Ekim 2026 · Uygulama: Vira (<code>com.kasis.vira</code>)</p>
+
+<div class="ozet">
+<p><strong>Özet:</strong> Vira hiçbir kişisel veri toplamaz, saklamaz veya paylaşmaz.
+Uygulamanın <strong>internet izni yoktur</strong>; bu bir söz değil, teknik bir
+kısıttır — izin olmadığı için uygulama hiçbir veriyi cihazınızın dışına
+gönderemez.</p>
+</div>
+
+<h2>1. Toplanan veri</h2>
+<p>Hiçbiri. Hesap açmanız gerekmez. Geliştiricinin eklediği hiçbir analitik,
+reklam veya çökme raporlama aracı yoktur. Reklam kimliği izni
+(<code>AD_ID</code>) uygulamadan kaldırılmıştır.</p>
+<p>Kullanılan yüz algılama kütüphanesi (Google ML Kit) kendi teşhis
+bileşenlerini birlikte getirir. Uygulamanın internet izni olmadığı için bu
+bileşenler hiçbir şey gönderemez; ağ izinleri her sürümde paket içeriği
+kontrol edilerek doğrulanır.</p>
+
+<h2>2. Kamera</h2>
+<p>Kafa hareketi ve göz kırpma komutları için ön kamera kullanılır.</p>
+<ul>
+  <li>Kareler telefonun içinde, uygulamanın paketiyle birlikte gelen yüz
+      algılama modeliyle işlenir. Model çalışma anında indirilmez.</li>
+  <li>Kare işlendikten sonra <strong>hemen bellekten silinir</strong>. Diske
+      yazılmaz, kopyalanmaz, gönderilmez.</li>
+  <li>Uygulamada fotoğraf veya video kaydeden bir kod yolu yoktur.</li>
+  <li>Kareden dışarıya çıkan tek şey birkaç sayıdır: baş açıları ve göz
+      açıklık olasılıkları. Bunlar da yalnızca bellekte kullanılır.</li>
+  <li>Kamera yalnızca desteklenen bir video uygulaması ön plandayken, ekran
+      açıkken ve siz asistanı açtığınızda çalışır. Kamera açıkken kalıcı bir
+      bildirim gösterilir ve tek dokunuşla kapatabilirsiniz.</li>
+</ul>
+
+<h2>3. Mikrofon ve ses komutları</h2>
+<p>Ses komutları <strong>varsayılan olarak kapalıdır.</strong></p>
+<ul>
+  <li>Açarsanız Android'in kendi ses tanıma servisi kullanılır. Uygulama her
+      zaman cihaz üstü (çevrimdışı) tanımayı ister; Android 13 ve üzerinde
+      seçtiğiniz dilin cihaz üstü modelinin yüklü olup olmadığı ayrıca
+      sorgulanır ve yüklü değilse size uyarı gösterilir.</li>
+  <li><strong>Cihazınızda çevrimdışı model yüklü değilse, sistemin tanıma
+      servisi sesi kendi sunucularında işleyebilir.</strong> Bu Android'in
+      davranışıdır ve uygulamanın kontrolünde değildir. Ses komutlarının
+      varsayılan olarak kapalı olmasının ve açarken uyarı gösterilmesinin
+      sebebi budur.</li>
+  <li>Uygulamanın kendisi hiçbir koşulda ses kaydı yapmaz ve tanınan metni
+      saklamaz, loglamaz.</li>
+</ul>
+
+<h2>4. Erişilebilirlik servisi</h2>
+<p><strong>Ne yapar:</strong> Siz başınızı eğdiğinizde, gözünüzü
+kırptığınızda veya komut söylediğinizde ekranda sizin yerinize kaydırma ya da
+dokunma hareketi yapar.</p>
+<p><strong>Hangi veriye erişir:</strong> Yalnızca ön planda hangi uygulamanın
+açık olduğunu (paket adını). Ekrandaki yazıları, mesajları, şifreleri,
+görselleri okumaz; bunları okuyan hiçbir kod yoktur.</p>
+<p><strong>Bu kontrol hangi uygulamalarda yapılır:</strong> Hepsinde. Servis
+yaklaşık 2,5 saniyede bir ön plandaki uygulamanın paket adını kontrol eder ve bunu
+siz hangi uygulamada olursanız olun yapar. Sebebi, hareketin yanlış bir
+uygulamaya gitmediğinden emin olmanın başka yolunun olmamasıdır. Okunan tek
+şey paket adıdır; hiçbir yere kaydedilmez, gönderilmez.</p>
+<p><strong>Hareket hangi uygulamalara gönderilir:</strong> Yalnızca Instagram,
+YouTube, TikTok, Snapchat ve Facebook. Servis ayrıca yalnızca bu beş
+uygulamadan olay alacak şekilde sınırlandırılmıştır. Her iki kısıtlama da
+uygulamanın yapılandırmasında tanımlıdır ve genişletilemez.</p>
+<p><strong>Teknik dürüstlük notu:</strong> Android, ön plandaki uygulamanın
+adını okuyabilmek için servise "pencere içeriğini alma" yetkisi verilmesini
+zorunlu kılar. Uygulama bu yetkiyle yalnızca paket adını okur. Android 13 ve
+üzerinde, bu okuma sırasında ekran içeriğinin servise önbelleğe alınmasını
+engelleyen çağrı biçimi kullanılır ve her okumadan sonra önbellek temizlenir.
+<strong>Android 8 ile 12 arasında bunu engellemek mümkün değildir</strong>;
+o sürümlerde platform, ön plandaki uygulamanın alt düğümlerini servisin
+önbelleğine kendiliğinden çeker. Uygulama bu veriye bakmaz ve zaten hiçbir
+yere gönderemez, ancak farkı açıkça belirtiyoruz.</p>
+<p><strong>Nasıl kapatılır:</strong> Uygulama içindeki ana anahtarı
+kapatmanız yeterlidir. Tamamen kaldırmak için: Android Ayarlar →
+Erişilebilirlik → Vira.</p>
+
+<h2>5. Cihazda saklananlar</h2>
+<p>Uygulamanın kalıcı olarak yazdığı tek şey <strong>ayarlarınızdır</strong>.
+Tam liste:</p>
+<ul>
+  <li>Asistanın açık mı kapalı mı olduğu</li>
+  <li>Hangi girdi kanallarının (kafa, göz, ses) ve hangi komutların açık olduğu</li>
+  <li>Hassasiyet ve süre ayarları: en kısa hareket süresi, komutlar arası
+      bekleme, uzun kırpma süresi, tek göz kırpma süresi, kaydırma süresi</li>
+  <li>Kalibrasyonda kaydettiğiniz nötr baş açıları ve eksen ters çevirme
+      tercihleriniz</li>
+  <li>Hangi uygulamada hangi duraklatma ve beğenme yöntemini seçtiğiniz</li>
+  <li>Tema tercihiniz</li>
+  <li>Karşılama ekranını, erişilebilirlik açıklamasını ve ses komutları
+      uyarısını onaylayıp onaylamadığınız — her biri yalnızca bir kez
+      gösterilsin diye</li>
+</ul>
+<p>Bunlar yalnızca telefonunuzun kendi depolama alanında tutulur. Bulut
+yedeklemesi ve cihaz aktarımı uygulama tarafından kapatılmıştır; uygulamayı
+kaldırdığınızda silinirler.</p>
+<p><strong>Tutulmayanlar:</strong> komut geçmişi, kaç kez kaydırdığınız,
+hangi uygulamayı ne kadar kullandığınız, kullanım istatistiği, teşhis kaydı,
+çökme raporu veya herhangi bir log dosyası. Uygulamada tek bir log çağrısı
+bile yoktur.</p>
+<p>Uygulama dili tercihinizi uygulama değil <strong>Android</strong> saklar
+(Ayarlar → Uygulamalar → Vira → Dil).</p>
+
+<h2>6. Çocuklar</h2>
+<p>Uygulama çocuklara yönelik değildir ve hiçbir yaş grubundan veri
+toplamaz.</p>
+
+<h2>7. Haklarınız</h2>
+<p>Uygulama hiçbir veri toplamadığı için silinecek, taşınacak veya
+düzeltilecek bir veriniz yoktur. Cihazınızdaki ayarları uygulamayı
+kaldırarak silebilirsiniz.</p>
+
+<h2>8. Değişiklikler</h2>
+<p>Bu politika değişirse güncel metin uygulamanın yeni sürümüyle birlikte
+yayınlanır ve bu sayfanın tarihi güncellenir.</p>
+
+<h2>9. İletişim</h2>
+<p>Geliştirici: <strong>Azad Kaya</strong><br>
+E-posta: <a href="mailto:kilicmarble@gmail.com">kilicmarble@gmail.com</a></p>
+<p>Gizlilik politikası veya uygulama hakkındaki her türlü soru ve talebiniz
+için yukarıdaki adresten ulaşabilirsiniz.</p>
+
+<hr>
+
+<h1 id="en">Vira — Privacy Policy</h1>
+<p class="ust">Last updated: 29 October 2026 · App: Vira (<code>com.kasis.vira</code>)</p>
+
+<div class="ozet">
+<p><strong>Summary:</strong> Vira collects, stores and shares no personal data.
+The app has <strong>no internet permission</strong>. That is not a promise but
+a technical constraint — without the permission the app cannot send anything
+anywhere.</p>
+</div>
+
+<h2>1. Data collected</h2>
+<p>None. You do not need an account. The developer has added no analytics,
+advertising or crash reporting tool. The advertising ID permission
+(<code>AD_ID</code>) is removed from the app.</p>
+<p>The face detection library used (Google ML Kit) ships its own diagnostic
+components. Because the app has no internet permission they cannot send
+anything; network permissions are verified in the built package for every
+release.</p>
+
+<h2>2. Camera</h2>
+<p>The front camera is used for head and blink commands.</p>
+<ul>
+  <li>Frames are processed on the phone by the face detection model bundled
+      inside the app. The model is not downloaded at runtime.</li>
+  <li>After processing, a frame is <strong>discarded from memory
+      immediately</strong>. It is never written to disk, copied or
+      transmitted.</li>
+  <li>There is no code path in the app that records a photo or a video.</li>
+  <li>The only things that leave a frame are a few numbers: head angles and
+      eye-open probabilities, used in memory only.</li>
+  <li>The camera runs only while a supported video app is in the foreground,
+      the screen is on, and you have switched the assistant on. An ongoing
+      notification is shown whenever the camera is active, and you can turn
+      it off with one tap.</li>
+</ul>
+
+<h2>3. Microphone and voice commands</h2>
+<p>Voice commands are <strong>off by default.</strong></p>
+<ul>
+  <li>If you turn them on, Android's own speech recognition service is used.
+      The app always asks for on-device (offline) recognition; on Android 13
+      and later it additionally checks whether the on-device model for your
+      language is installed, and warns you if it is not.</li>
+  <li><strong>If no offline model is installed on your device, the system's
+      recognition service may process the audio on its own servers.</strong>
+      That is Android's behaviour and is not under the app's control. This is
+      why voice commands are off by default and why you are warned before
+      enabling them.</li>
+  <li>The app itself never records audio and never stores or logs recognised
+      text.</li>
+</ul>
+
+<h2>4. Accessibility service</h2>
+<p><strong>What it does:</strong> when you tilt your head, blink or speak a
+command, it performs a swipe or tap on the screen on your behalf.</p>
+<p><strong>What data it accesses:</strong> only which app is currently in the
+foreground (its package name). It does not read text, messages, passwords or
+images on your screen; no code in the app touches them.</p>
+<p><strong>Which apps this check covers:</strong> all of them. The service
+checks the foreground app's package name about every 2.5 seconds, whatever app you
+are in, because there is no other way to be sure a gesture never reaches the
+wrong app. The only thing read is the package name; it is never stored or
+sent.</p>
+<p><strong>Which apps gestures are sent to:</strong> only Instagram, YouTube,
+TikTok, Snapchat and Facebook. The service is also restricted to receiving
+events from those five apps. Both restrictions are declared in the app's
+configuration and cannot be widened.</p>
+<p><strong>Technical honesty note:</strong> Android requires the service to
+hold the "retrieve window content" capability in order to read the foreground
+app's name at all. The app uses that capability only to read the package name.
+On Android 13 and later, caching of screen content is switched off during that
+read and the cache is cleared afterwards. <strong>On Android 8 to 12 this
+cannot be disabled</strong>; on those versions the platform pulls the
+foreground app's child nodes into the service's cache by itself. The app never
+looks at that data and could not send it anywhere, but we state the difference
+explicitly.</p>
+<p><strong>How to turn it off:</strong> switch off the main toggle in the app.
+To remove it completely: Android Settings → Accessibility → Vira.</p>
+
+<h2>5. What is stored on your device</h2>
+<p>The only thing the app writes persistently is <strong>your settings</strong>.
+The complete list:</p>
+<ul>
+  <li>Whether the assistant is on or off</li>
+  <li>Which input channels (head, blink, voice) and which commands are enabled</li>
+  <li>Sensitivity and timing settings: minimum movement duration, wait between
+      commands, long-blink duration, wink duration, swipe duration</li>
+  <li>The neutral head angles you save during calibration and your axis
+      inversion preferences</li>
+  <li>Which pause and like method you chose for each app</li>
+  <li>Your theme preference</li>
+  <li>Whether you have acknowledged the onboarding, the accessibility
+      disclosure and the voice-command warning — so each is shown only once</li>
+</ul>
+<p>These are kept only in your phone's own storage. Cloud backup and device
+transfer are disabled by the app; uninstalling it deletes them.</p>
+<p><strong>Not kept:</strong> command history, how many times you scrolled,
+how long you used any app, usage statistics, diagnostic records, crash reports
+or any log file. The app does not contain a single logging call.</p>
+<p>Your app language preference is stored by <strong>Android</strong>, not by
+the app (Settings → Apps → Vira → Language).</p>
+
+<h2>6. Children</h2>
+<p>The app is not directed at children and collects no data from any age
+group.</p>
+
+<h2>7. Your rights</h2>
+<p>Because the app collects no data, there is nothing to delete, export or
+correct. You can remove the settings stored on your device by uninstalling
+the app.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, the current text ships with the new version of the
+app and the date on this page is updated.</p>
+
+<h2>9. Contact</h2>
+<p>Developer: <strong>Azad Kaya</strong><br>
+Email: <a href="mailto:kilicmarble@gmail.com">kilicmarble@gmail.com</a></p>
+
+<footer>Vira · <span id="yil"></span></footer>
+<script>document.getElementById("yil").textContent = new Date().getFullYear();</script>
+
+</main>
+</body>
+</html>
